@@ -1,0 +1,687 @@
+@font-face {
+	font-family: ProximaNovarRegular;
+	src: url(../_font/ProximaNovaRegular.otf); 
+}
+
+@font-face {
+	font-family: ProximaNovarLight;
+	src: url(../_font/ProximaNovaLight.otf); 
+}
+
+
+
+
+
+body{
+	background-color: #ffffff;
+
+	
+}
+body,ul,li{
+	margin: 0;
+	padding: 0;
+
+}
+
+a, h1,h2,h3,h4,button{
+	color: #9f7163;
+	font-family:"ProximaNovarRegular";
+}
+p,li{
+	color: #9f7163;
+	font-family:"ProximaNovarLight";
+	font-size:15pt;
+}
+a{
+	font-size:15pt;
+	font-weight: bold;
+}
+
+
+
+.border-top{
+	height: 40px;
+	width:100%;
+	background-color: #bb8888;
+}
+.wrapper, .main{
+	width: 96%;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 2%;
+}
+header{
+	padding: 20px 0;
+	width: 100%;
+}
+header:after {
+	display: block;
+	content: "";
+	clear: both;
+}
+
+/*header h1{
+
+	margin: 0;
+	text-indent: -10000px;
+	background: url(../_images/logo.png) no-repeat;
+	width: 35px;
+	height: 50px;
+	margin: 0 auto;
+}
+*/
+header div.logo{
+	/*border: solid black;*/
+	text-align: center;
+}
+header div.logo img{
+	margin: 0 auto;
+	height: 100px;
+	width: auto;
+}
+
+
+header nav{
+	margin: 0 auto;
+	text-align: center;
+	width: 100%;
+	/*float: left;*/
+	/*background-color: #333;*/
+	overflow: hidden;
+}
+
+
+header nav ul{
+	display: inline-block;
+	list-style-type: none;
+}
+
+header nav h2{
+	line-height: 0;
+	margin: 0;
+	text-indent: -10000px;
+}
+
+header nav li{
+	list-style-type: none;
+	float: left;
+	margin-left: 40px;
+	margin-top: 10px;
+
+}
+
+header nav li a{
+	color: #cdb5a2;
+	text-decoration: none;
+	letter-spacing: 1px;
+	/*font-weight: bold;*/
+	/*text-transform: uppercase;*/
+}
+
+section.banner{
+	margin-top: 20px;
+	/*background-color: #87509c;*/
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	width: 100%;
+	/*text-align: center;*/
+}
+section.banner:after{
+	display: block;
+	content: "";
+	clear: both;
+}
+
+
+.square-bg{
+	height: 350px;
+	background-color: #cdb5a2;
+	position: absolute; 
+	left: 0; 
+	right: 0; 
+	margin-left: auto; 
+	margin-right: auto; 
+	top: 300px;
+	z-index: -99999;
+}
+
+section div.img-desc{
+	flex: 1;
+	/*width: 80%;*/
+	width: 97%;
+	/*border: solid black;*/
+	padding: 0 20px;
+} 
+
+
+section div.img-desc img{
+	height: 392px;
+	width: auto;
+} 
+section div.img-desc p{
+	text-align: justify;
+	color: #aa7766;
+
+	/*padding-right: 100px;*/
+}
+
+section div.subscribe-box{
+	width: 50%;
+	/*border: solid black;*/
+	text-align: justify;
+	margin-top: 180px;
+	margin-left: 15%;
+	padding: 50px;
+	height: 300px;
+	background: url(../_images/inquiry-bg.png) no-repeat;
+	background-size: cover;
+
+
+}
+section div.subscribe-box p {
+	color: #aa7766;
+	font-family:"ProximaNovarRegular";
+	font-weight: bold;
+
+
+}
+
+section div.subscribe-box button{
+	text-transform: uppercase;
+	/*font-weight: bold;*/
+	background-color: #9f7163;
+	border: none;
+	color: white;
+	padding: 20px 32px;
+	text-decoration: none;
+	margin: 4px 2px;
+	cursor: pointer;
+	width: 100%;
+	font-size: 15pt;
+}
+
+section div.subscribe-box input{
+
+	border: 0;
+	width: 100%;
+	padding: 15px 20px;
+	margin: 8px 0;
+	box-sizing: border-box;
+	background-color: #dab6a9;
+	font-size: 15pt;
+	color: white;
+}
+section div.subscribe-box input::placeholder {
+	color: white;
+	opacity: 1;
+}
+
+
+
+div.services{
+
+	background-color: #17c2a4;
+	float: left;
+	width: 100%;
+	text-align: center;
+	/*height: 800px;*/
+}
+div.services:after{
+	display: block;
+	content: "";
+	clear: both;
+}
+
+section.product{
+	margin-bottom: 30px;
+}
+section.product .product-header{
+	margin: 0 auto;
+	text-align: center;
+	color: #9f7163;
+	margin-bottom: 30px;
+	margin-top: 20px;
+	font-size: 25pt;
+	font-weight: bold;
+	letter-spacing: 3px;
+}
+
+div.product{
+	display: grid;
+	place-items: center;
+	grid-template-columns: 1fr 1fr 1fr;
+	width: 100%;
+
+	margin-bottom: 20px;
+	margin-top: 40px;
+	/*border: solid black;*/
+	
+}
+
+div.product div.product-1{
+	flex: 1;
+	/*padding-right: 100px;*/
+	/*border: solid black;*/
+	width: 	251px;
+	height: auto;
+}
+div.product div.product-1 img{
+	width: 251px;
+	height: 392px;
+}
+div.product div.product-1 p{
+	/*margin: 10px 0;*/
+	/*padding: 0 50px;*/
+	text-align: left;
+	color: #9f7163;
+	font-family:"ProximaNovarRegular";
+	font-weight: bold;
+	font-size: 16pt;
+	letter-spacing: 1px;
+}
+
+
+section.product div.browse{
+	margin: 0 auto;
+	text-align: center;
+
+}
+
+
+section.product div.browse button{
+	text-transform: uppercase;
+	/*font-weight: bold;*/
+	background-color: #9f7163;
+	border: none;
+	color: white;
+	padding: 13px 32px;
+	text-decoration: none;
+	margin: 4px 2px;
+	cursor: pointer;
+	width: 200px;
+	font-weight: bold;
+	font-size: 15pt;
+	width: 300PX;
+}
+
+section.about{
+	margin-top: 60px;
+}
+
+div.about-container{
+
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	width: 100%;
+	text-align: center;
+	margin-bottom: 20px;
+
+}
+div.about-desc{
+
+}
+
+div.about-desc h1{
+
+	font-size: 25pt;
+	margin-top: 30px;
+}
+div.about-desc p{
+	margin-top: 20px;
+	font-size: 15pt;
+	padding: 0 20px;
+}
+
+
+
+div.about-container img{
+	width: 519px;
+
+}
+
+div.about-links h4{
+	font-size: 16pt;
+	margin: 0;
+}
+
+
+
+div.about-links div.line{
+	height: 2px;
+	background-color: #9f7163;
+	border: 0;
+	width: 200px;
+	margin: 5px 0 10px;
+}
+
+div.about-links{
+	/*border: solid black;*/
+	display: grid;
+	place-items:  left;
+	grid-template-columns: 1fr 1fr;
+	position: relative;
+	margin-bottom:30px;
+
+
+}
+
+div.links{
+	/*border: solid black;*/
+	display: grid;
+	place-items:  left;
+	grid-template-columns: 1fr 1fr;
+}
+
+div.links p{
+	font-family:"ProximaNovarRegular";
+	font-size:14pt;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+
+
+div.social-logos  ul{
+	display: inline-block;
+	list-style-type: none;
+	position: absolute;
+	text-align: right;
+	bottom: 0;
+	right: 0;
+}
+div.social-logos  li{
+	list-style-type: none;
+	float: left;
+	margin-left: 40px;
+	margin-top: 10px;
+}
+
+div.social-logos  li img{
+	height: 40.3px;
+	width: auto;
+}
+
+div.social-logos  li img.black{
+	/*height: 40.3px;*/
+	width: 40.3px;
+	height: auto;
+}
+
+
+footer{
+	background-color: #bb8888;
+	
+}
+
+footer div.footer-desc{
+	max-width: 1200px;
+	display: grid;
+	place-items:  left;
+	grid-template-columns: 1fr 1fr;
+	margin: 0 auto;
+	position: relative;
+	padding: 0 20px;
+}
+footer div.footer-desc p {
+	color: white;
+	font-family:"ProximaNovarRegular";
+	
+	font-size:15pt;
+	/*font-weight: bold;*/
+
+}
+
+footer div.footer-desc div:nth-child(2) p{
+	/*position: absolute;*/
+	text-align: right;
+}
+
+footer div.footer-box{
+	background-color: #cdb5a2;
+	height: 60px;
+	width: 100%;
+	
+}
+
+
+
+.links-mobile{
+	display: none;
+}
+
+
+
+
+
+
+
+
+/*REPONSIVE SECTION
+*/
+@media screen and (max-width: 1140px){
+	html,body {
+		margin:0;
+		padding:0;
+		overflow-x:hidden;
+	}
+	section.banner{
+		margin-top: 20px;
+		text-align: center;
+		width: 100%;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+	}
+
+	section div.img-desc{
+		width: 100%;
+		text-align: center;
+
+	} 
+
+	section div.img-desc p{
+		color: #aa7766;
+		width: 100%;
+		margin: 20px auto 0;
+		/*padding-right: 100px;*/
+	}
+
+	
+	section div.subscribe-box{
+		width: 100vw;
+		text-align: center;
+		/*border: solid black;*/
+		margin-top: 40px;
+
+		margin-left: 0;
+		padding: 50px;
+		height: 200px;
+		background: url(../_images/inquiry-bg.png) no-repeat;
+		background-size: cover;
+
+
+	}
+	section div.subscribe-box div.description{
+		/*border: solid black;*/
+		padding: 0 80px;
+
+	}
+
+	section div.subscribe-box button{
+		/*font-weight: bold;*/
+		padding: 12px 32px;
+		margin: 4px 2px;
+		width: 80%;
+		font-size: 15pt;
+
+	}
+
+	section div.subscribe-box input{
+
+		width: 80%;
+		padding: 15px 20px;
+		margin: 8px 0;
+		font-size: 15pt;
+	}
+}
+
+@media screen and (max-width: 960PX){
+	section div.subscribe-box{
+		height: 250px;
+	}
+	div.about-container{
+
+		margin-top: 20px;
+		text-align: center;
+		width: 100%;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+	}
+	div.about-links div.line{
+		height: 2px;
+		background-color: #9f7163;
+		border: 0;
+		width: 200px;
+		margin: 5px 0 10px;
+	}
+
+	div.about-links{
+		/*border: solid black;*/
+		margin-top: 20px;
+		text-align: center;
+		width: 100%;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+	}
+
+	div.links{
+		/*border: solid black;*/
+		/*margin-top: 20px;*/
+		text-align: center;
+		width: 100%;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+
+
+	}
+	div.links p{
+		
+		display: none;
+	}
+
+	.links-mobile{
+		/*border: solid black;*/
+		font-family:"ProximaNovarRegular";
+		font-size:14pt;
+		font-weight: bold;
+		cursor: pointer;
+		display: block ;
+		padding: 0;
+		margin-bottom: 100px;
+		padding: 0 20px;
+	}
+
+	div.social-logos  ul{
+		text-align: center;
+		width: 100%;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+	}
+
+}
+@media screen and (max-width: 795px){
+	.p3{
+		display: none;
+	}
+	div.product{
+		display: grid;
+		place-items: center;
+		grid-template-columns: 1fr 1fr;
+	}
+	section div.subscribe-box div.description{
+		padding: 0;
+	}
+	section div.subscribe-box input{
+		width: 100%;
+	}
+	section div.subscribe-box button{
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 600px){
+	section div.img-desc img {
+		
+		width: 100%;
+		height: auto;
+	}
+	section div.img-desc p {
+		width: 100%;
+		height: auto;
+	}
+	.square-bg{
+		height: 30%;
+	}
+	div.product div.product-1{
+		width: 100%;
+	}
+	div.product div.product-1 img {
+		width: 100%;
+		height: 300px;
+		/*height: 80%;*/
+
+	}
+
+}
+@media screen and (max-width: 500px){
+
+
+	
+
+	header nav li{
+		list-style-type: none;
+		float: left;
+		margin-left: 20px;
+		margin-top: 10px;
+
+	}
+
+	header nav li a{
+		color: #cdb5a2;
+		text-decoration: none;
+		letter-spacing: 1px;
+		/*font-weight: bold;*/
+		/*text-transform: uppercase;*/
+		font-size: 13pt;
+	}
+	*p{
+		font-size: 13pt;
+	}
+	.square-bg{
+		height: 20%;
+	}
+	.img-desc{
+		margin-top: -20px;
+	}
+}
+
+@media screen and (max-width: 440px){
+
+	.description{
+		margin-top: -20px;
+	}
+}
